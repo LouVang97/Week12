@@ -8,4 +8,9 @@ each host has a special list of routing rules which called routing table. The ta
 address, name of the interface to which the datagram is to be routed, and IP address of another machine that carry the datagram
 on it next step through the network. To display this routing table use one of the following commands "User% cat /proc/net/route", 
 "user% /sbin/route -n", and "user% netstat -r". The process of routing first there is an incoming datagram is received, the 
-destination address is examined, and the last is to compare with each entry in the table. 
+destination address is examined, and the last is to compare with each entry in the table. Route is a command that takes command 
+line arguments and convert them into kernel system call that request the kernel to add, delete, or modify entries in the routing 
+table. Use this command you'll be able to configure routing. However, the problem is with manual routing or static routing. Those
+can cause machine or link fails in your network. Here are some example of routing protocols; routed' -RIP and gated' -RIP, and 
+OSPF. the important points relating to dtnamic routing are run dynamic routing protcol daemon, automatically modify routing,
+and RIP os suited to small to medium sized networks. 
