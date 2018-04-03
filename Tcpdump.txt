@@ -4,4 +4,36 @@ CISCI 2461-70
 Tcpdump 
 
 Tcpdump is a tool used by security professionals for premier network analysis. This tool displays network tracff a more natural 
-way the burden of analsis is placed directly on the human rather than the application. x.s
+way the burden of analsis is placed directly on the human rather than the application. Using this tools, it's help to 
+understanding of TCP/IP. 
+
+Options when cofiguring tcpdump:
+-i any: Listen to all interfaces just to see if you're seeing any traffic.
+-i eth0: Listen to the eth0 interface.
+-D: Show the list available interfaces
+-n: Dont resolve hostnames.
+-nn: Don't resolve hostnames or port names.
+-q: Be less verbose (more quiet) with your output.
+-t: Give human-readable timestamp output.
+-ttt: Give maximally human-reable timestamp output.
+-X: Show the packet's contents in both HEX and ASCII.
+-XX: Same as -X, but also shows the ethernet header.
+-v, -vv, -vvv: Increase the amount of packet information yuou get back.
+-c: Only get x number of packets and then stop.
+-s: Define the snaplength(size) of the capture in bytes.  Use -s0 to get everything, unless you are intentionally capturing less.
+-S: Print absolute sequence numbers.
+-e: Get the ethernet header as well.
+-q: Show less protocol information.
+-E: Decript IPSEC traffic by providing an encryption key.
+
+Expressions allow you to trim out various types of traffic and find exactly what you're looking for.
+The three main tyoes od expression: type, dir, and proto.
+- Types: host, net, and port.
+- Direction: src, dst, and combinations thereor.
+- Proto(col): tcp, udp, icmp, ah, and many more.
+
+Some examples:
+# tcpdump -i any 
+# tcpdump -i eth0 
+# tcpdump src 2.3.4.5
+# tcpdump dst 3.3.4.5
