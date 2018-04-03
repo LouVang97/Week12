@@ -11,4 +11,7 @@ How does the Internet work?
   server. They only have to know the location of the name server to work. Inside of a packet there are three important things which are
   source address, the destination address, and service number or port number. With these a browser can send a command to the Web server.
   The router is the one will ship the packet down the wire until it get to the machine. Internet uses two protocols for multiple-packet 
-  transmissions which are IP and TCP.  IP(Internet Protocol)  is in lower level that responsible for exchanging information over a network. TCP(Transmission Control Protocol) is in Upper level that support reliability. Both of TCP/IP contains a checksum to enable detection of date corrupted by bad link. The last step is the application protocol that runs on top of TCP/IP using to pass strings of bytes back and forth known as HTTP. Combine everything together the internet work will work. 
+  transmissions which are IP and TCP.  IP(Internet Protocol)  is in lower level that responsible for exchanging information over a 
+  network. TCP(Transmission Control Protocol) is in Upper level that support reliability. Both of TCP/IP contains a checksum to enable 
+  detection of date corrupted by bad link. The last step is the application protocol that runs on top of TCP/IP using to pass strings of 
+  bytes back and forth known as HTTP. Combine everything together the internet work should work. 
