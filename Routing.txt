@@ -1,0 +1,11 @@
+Lou Vang 
+CISCI 2461-70 
+
+Routing 
+
+IP routing is the process of moving packets across a network from one host to another that performed by routers. Routing work by
+each host has a special list of routing rules which called routing table. The table contains rows of three filed; destination 
+address, name of the interface to which the datagram is to be routed, and IP address of another machine that carry the datagram
+on it next step through the network. To display this routing table use one of the following commands "User% cat /proc/net/route", 
+"user% /sbin/route -n", and "user% netstat -r". The process of routing first there is an incoming datagram is received, the 
+destination address is examined, and the last is to compare with each entry in the table. 
